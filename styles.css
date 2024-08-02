@@ -1,0 +1,134 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto; /* Center horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.roulette {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.slot {
+    background-color: #333;
+    border: 2px solid #555;
+    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.slot img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+#spinButton {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 12px 24px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#spinButton:hover {
+    background-color: #e64a19;
+}
+
+#attemptCount {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.prizes {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    width: 80%;
+    max-width: 500px; /* Optional: Limit the width for better centering */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Center horizontally */
+}
+
+.prizes p {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.prizes p img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+#notification {
+    background-color: #ffeb3b;
+    color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: absolute; /* Positioned absolutely within the container */
+    bottom: 20px; /* Positioned 20px from the bottom of the container */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: calc(100% - 40px); /* Full width minus padding */
+}
+
+#notification p {
+    margin: 0 0 10px;
+}
+
+#notification a {
+    color: #ff5722;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#notification a:hover {
+    text-decoration: underline;
+}

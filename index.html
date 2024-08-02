@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="roulette">
+            <div class="slot">
+                <div class="images">
+                    <img src="img/diamante.png" alt="Diamante">
+                    <img src="img/dinero.png" alt="Dinero">
+                    <img src="img/bomba.png" alt="Bomba">
+                </div>
+            </div>
+            <div class="slot">
+                <div class="images">
+                    <img src="img/diamante.png" alt="Diamante">
+                    <img src="img/dinero.png" alt="Dinero">
+                    <img src="img/bomba.png" alt="Bomba">
+                </div>
+            </div>
+            <div class="slot">
+                <div class="images">
+                    <img src="img/diamante.png" alt="Diamante">
+                    <img src="img/dinero.png" alt="Dinero">
+                    <img src="img/bomba.png" alt="Bomba">
+                </div>
+            </div>
+        </div>
+        <button id="spinButton">Girar</button>
+        <div id="attemptCount">5</div>
+        <div class="prizes">
+            <p>x3 <img src="img/diamante.png" alt="Diamante"> : Recarga 100 diamantes</p>
+            <p>x3 <img src="img/dinero.png" alt="Dinero"> : $10 dolares</p>
+            <p>x3 <img src="img/bomba.png" alt="Bomba"> : Nada</p>
+            <p>2 <img src="img/diamante.png" alt="Diamante"> + 1 <img src="img/dinero.png" alt="Dinero"> : 2 giros más</p>
+            <p>2 <img src="img/dinero.png" alt="Dinero"> + 1 <img src="img/diamante.png" alt="Diamante"> : 2 giros más</p>
+        </div>
+    </div>
+
+    <div id="notification" style="display:none;">
+        <p>Te has quedado sin intentos. Visita al patrocinador para obtener 5 intentos más.</p>
+        <a id="sponsorLink" href="https://stighoazon.com/4/7314046" target="_blank">Visitar Patrocinador</a>
+    </div>
+
+    <audio id="spinAudio" src="sounds/girar.mp3"></audio>
+    <audio id="bonusAudio" src="sounds/intentos.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
